@@ -1,0 +1,67 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+
+            <h1 id="heading" class="btn btn-info" >AI PING PONG<button style="float: right;" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Click here for instructions</button></h1>
+            <br><br>
+            <button id="play" class="btn btn-success" onclick="playgame()">Play Game</button>
+            <br>
+            <br>
+            <button id="restart" class="btn btn-danger" onclick="restartgame()">Restart Game</button>
+            <br><br>
+            <div id="status" class="btn btn-warning"></div>
+            <br><br>
+
+            <div id="canvas"></div>
+            
+
+            
+
+
+    
+        
+
+
+            <h4 id="footer">Source Code: <a href="https://mahdihat791.github.io/PingPong/" target="_blank">Atari</a> ||   Game Credit: Ping Pong</h4>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instructions</h4>
+                    </div>
+          
+                    <div class="modal-body">
+                      <ul type = "disc">
+                          <li>Move your right wrist up and down to move your paddle</li>
+                          <li>The speed will increase each time the ball hits any paddle</li>
+                          <li>If you miss the computer gets a point</li>
+                          <li>Good Luck!</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        </center>        
+    </body>
+
+    <script src="main.js"></script>
+</html>
